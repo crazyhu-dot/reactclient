@@ -1,8 +1,9 @@
 import React ,{Component} from 'react';
 import {BrowserRouter,Route,Switch} from "react-router-dom";
-import {Button} from "antd";
+
 import Login from "./pages/login/login";
-import Admin from "./pages/admin/admin";
+import Admin from "./pages/admin/admin"
+import './index.css';
 export default class App extends Component{
 
   render() {
@@ -12,7 +13,6 @@ export default class App extends Component{
             <Route path="/login" component={Login}></Route>
             <Route path="/admin" component={Admin}></Route>
           </Switch>
-
         </BrowserRouter>
     )
   }
